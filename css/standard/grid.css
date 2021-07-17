@@ -1,0 +1,175 @@
+.grid{
+    width: 100%;
+    display: block;
+    padding : 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    color: red;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 77.125rem){
+    
+    .wide{
+        width: 75rem;
+        margin: 0 auto;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+    }
+
+    .col{
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+
+    .pc-0{
+        display: none;
+    }
+
+    /* No gutter */
+    .row .no-gutter{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .row.no-gutter .col{
+        padding-left:0rem;
+        padding-right: 0rem;
+    }
+
+    /* Class setting start column */
+    /* You shouldn't use .pc-start and .pc-o-[any number] together.*/
+    .pc-start{
+        margin-left: -0.625rem;
+    }
+
+    /* Class setting width for grid - column */
+    .pc-1{
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+
+    .pc-2{
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .pc-3{
+        flex: 0 0 25.000000%;
+        max-width: 25.000000%;
+    }
+
+    .pc-4{
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    
+    .pc-5{
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    
+    .pc-6{
+        flex: 0 0 50.000000%;
+        max-width: 50.000000%;
+    }
+    
+    .pc-7{
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    
+    .pc-8{
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    
+    .pc-9{
+        flex: 0 0 75.000000%;
+        max-width: 75.000000%;
+    }
+    
+    .pc-10{
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    
+    .pc-11{
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+
+    .pc-12{
+        flex: 0 0 100.000000%;
+        max-width: 100.000000%;
+    }
+    /*  */
+
+    /* Class setting margin-left for .pc-column */
+    /* You shouldn't use .pc-start and .pc-o-[any number] together.*/
+    .pc-o-1{
+        margin-left: 8.333333%;
+    }
+
+    .pc-o-2{
+       margin-left: 16.666667%;
+    }
+
+    .pc-o-3{
+       margin-left: 25.000000%;
+    }
+
+    .pc-o-4{
+       margin-left: 33.333333%;
+    }
+    
+    .pc-o-5{
+       margin-left: 41.666667%;
+    }
+    
+    .pc-o-6{
+       margin-left: 50.000000%;
+    }
+    
+    .pc-o-7{
+       margin-left: 58.333333%;
+    }
+    
+    .pc-o-8{
+       margin-left: 66.666667%;
+    }
+    
+    .pc-o-9{
+       margin-left: 75.000000%;
+    }
+    
+    .pc-o-10{
+       margin-left: 83.333333%;
+    }
+    
+    .pc-o-11{
+       margin-left: 91.666667%;
+    }
+    /*  */
+
+    .pc-1, .pc-2, .pc-3, .pc-4, .pc-5,
+    .pc-6, .pc-7, .pc-8, .pc-9, .pc-10,
+    .pc-11, .pc-12{
+        display: block;
+    }
+}
